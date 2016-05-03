@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html" that would make this page get displayed as a popup
+ -->
+<html>
+<head>
+    <title>Read Time</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+
+        #popupBox {
+            width: 250px;
+        }
+
+        .myButton {
+            background-color: white;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+            padding: 7px;
+        }
+
+        .myButton:hover {
+            background-color: lightgray;
+        }
+
+    </style>
+
+    <script src="popup.js"></script>
+</head>
+
+<body>
+<div id="popupBox">
+    <a class="myButton" id="articleOnly">Show Article Only</a>
+    <a class="myButton" id="estimate">Estimate Your Reading Speed</a>
+    <a class="myButton" id="settings">Settings</a>
+</div>
+</body>
+</html>
+

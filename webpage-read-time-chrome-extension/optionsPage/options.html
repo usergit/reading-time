@@ -1,0 +1,60 @@
+<!-- options page view -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read Time Options</title>
+    <style>
+        div {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="wordsPerMinute">Your reading speed in Words Per Minute</label> <input style="width: 50px;"
+                                                                                      id="wordsPerMinute" type="text">
+</div>
+
+<div id="widgetPositionArea">
+    widget position
+    <div style="padding-top: 6px;">
+        <input id="0" type="radio" name="widgetPositionRadio" value="topLeft">
+        <input id="1" type="radio" name="widgetPositionRadio" value="topMiddle">
+        <input id="2" type="radio" name="widgetPositionRadio" value="topRight">
+    </div>
+    <div>
+        <input id="3" type="radio" name="widgetPositionRadio" value="middleLeft">
+        <input id="4" type="radio" name="widgetPositionRadio" value="middleMiddle">
+        <input id="5" type="radio" name="widgetPositionRadio" value="middleRight">
+    </div>
+    <div>
+        <input id="6" type="radio" name="widgetPositionRadio" value="bottomLeft">
+        <input id="7" type="radio" name="widgetPositionRadio" value="bottomMiddle">
+        <input id="8" type="radio" name="widgetPositionRadio" value="bottomRight">
+    </div>
+</div>
+
+<!-- buggy in most websites (alters websites look as it gets affixed to the top of the page)-->
+<!--<div>-->
+    <!--<label><input type="checkbox" id="9" value="fixedPosition"> Fixed Position</label><br/><br/>-->
+<!--</div>-->
+
+Widget Size
+<div>
+    <input id="widgetSizeRange" type="range" name="widgetSizeRange" min="1" max="4"><span id="widgetSizeRangeDisplay">Small</span><br/>
+</div>
+
+<div>
+    Font color <input id="widgetFontColor" type="color" name="fontColor">
+    Background color <input id="widgetBackgroundColor" type="color" name="backgroundColor">
+</div>
+
+<div id="status"></div>
+<button id="save">Save</button>
+<button id="restoreDefault">Restore Default</button>
+
+<script src="../extensionSettings.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
