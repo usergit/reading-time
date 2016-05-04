@@ -1,5 +1,6 @@
 ## webpage read time estimator chrome extension
 
+##### [Chrome Webstore Link](https://chrome.google.com/webstore/detail/read-time/nccohhimobidpghgpnejnbkpoichbbml) 
 ### A chrome extension that tells you how much time it takes to read a web page article.
 
 - very fast calculation time using firefox readability library
@@ -14,5 +15,4 @@
 - no data will be collected from this app
 - strong privacy, does not send any of your data to any website
 - no analytics or tracking of any sort
-
 
