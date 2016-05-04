@@ -2,9 +2,15 @@
 
 ### A chrome extension that tells you how much time it takes to read a web page article.
 
-- simple widget display
-- input your reading speed
-- adjust the display to how you like it
-- works well with web page articles
+- very fast calculation time using firefox readability library
+- does not block rendering of the webpage as it is loaded after everything is done loading on the page
+- strong privacy, does not send any of your data to any website
+- no analytics or tracking of any sort
+- works very well on webpage articles
+- does not work well for other types of content
+- can adjust the look of the widget to your liking
+
+# privacy policy
+- no data will be collected from this app
 
 
