@@ -44,16 +44,36 @@
                                     font-size: ${cssSettingsObject.fontSize};
                                     font-weight: ${cssSettingsObject.fontWeight};
                                     border: ${cssSettingsObject.border};
-                                    border-radius: ${cssSettingsObject.borderRadius};`;
+                                    border-radius: ${cssSettingsObject.borderRadius};
+                                    cursor: hand;`;
                     return widgetCss;
                 }
 
                 var tempDiv   = document.createElement('div');
-                tempDiv.style = convertCssObject2String(items.settings.widgetStyleCss);
+                var widgetStyle = convertCssObject2String(items.settings.widgetStyleCss);
+                tempDiv.style = widgetStyle;
 
                 var timeDisplay = `<div>${timeToRead}</div>`;
 
                 tempDiv.innerHTML = timeDisplay;
+
+                // show a close icon
+                tempDiv.onmouseover = function () {
+                    this.firstChild.textContent = "Close";
+                };
+
+                // restore time display
+                tempDiv.onmouseout = function () {
+                    this.innerHTML = timeDisplay;
+                };
+
+                // close the div
+                tempDiv.onclick = function () {
+                    this.outerHTML = "";
+                    delete this;
+                };
+
+
                 document.body.insertBefore(tempDiv, document.body.firstChild);
             })
         }
