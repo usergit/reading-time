@@ -1,11 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Read Time",
-  "description": "This extension shows the estimated read time for a web page",
-  "version": "1.0.0",
+  "name": "Reading Time",
+  "short_name": "Reading Time",
+  "description": "This extension shows the estimated reading time for a web page",
+  "version": "1.1.0",
   "browser_action": {
     "default_popup": "popupPage/popup.html",
-    "default_title": "Read Time"
+    "default_title": "Reading Time"
   },
   "icons": {
     "16": "assets/timereadicon16.png",

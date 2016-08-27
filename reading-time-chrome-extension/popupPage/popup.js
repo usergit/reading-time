@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         chrome.tabs.executeScript(null, {file: "popupPage/showArticleOnly.js"});
     });
 
-    //open the read estimator site from the popup menu
+    //open the reading estimator site from the popup menu
     document.getElementById('estimate').addEventListener('click', function () {
         chrome.tabs.create({url: "http://www.myreadspeed.com/calculate/"});
     });
