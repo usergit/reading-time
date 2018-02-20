@@ -3,7 +3,7 @@
   "name": "Reading Time",
   "short_name": "Reading Time",
   "description": "This extension shows the estimated reading time for a web page",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "browser_action": {
     "default_popup": "popupPage/popup.html",
     "default_title": "Reading Time"
