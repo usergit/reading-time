@@ -12,7 +12,7 @@ var estimateTime = (function () {
             if (mins.toString().length === 1) { // if there is only 1 digit, for e.g. 6 should be 06 minutes and 1:06 instead of 1:6
                 mins = 0 + mins.toString();
             }
-            return hours + ":" + mins + " hrs";
+            return hours + ":" + mins + " 🕑 ";
         } else {
             return "N/A"
         }
