@@ -8,6 +8,9 @@ var estimateTime = (function () {
             minutes   = Math.round(minutes); // round to handle fractional inputs digit minutes for e.g. 15.65 to 16 mins
             var hours = Math.trunc(minutes / 60);
             var mins  = minutes % 60;
+            if (hours < 1) {
+                return mins + " mins";
+            }
 
             if (mins.toString().length === 1) { // if there is only 1 digit, for e.g. 6 should be 06 minutes and 1:06 instead of 1:6
                 mins = 0 + mins.toString();
